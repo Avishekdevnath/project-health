@@ -1,7 +1,9 @@
 # Project Health
 
-[![npm version](https://img.shields.io/npm/v/project-health.svg)](https://www.npmjs.com/package/project-health)
 [![CI](https://github.com/Avishekdevnath/project-health/actions/workflows/ci.yml/badge.svg)](https://github.com/Avishekdevnath/project-health/actions)
+[![npm version](https://img.shields.io/npm/v/project-health.svg)](https://www.npmjs.com/package/project-health)
+[![npm downloads](https://img.shields.io/npm/dm/project-health.svg)](https://www.npmjs.com/package/project-health)
+[![license](https://img.shields.io/npm/l/project-health.svg)](https://github.com/Avishekdevnath/project-health/blob/main/LICENSE)
 
 > Analyze your Node.js project and generate a comprehensive health report.
 
@@ -41,7 +43,23 @@ project-health --help          # Show help
 project-health --version       # Show version
 ```
 
-## Example Output
+## Usage Examples
+
+Run in your project root:
+
+```sh
+project-health --all           # Run all checks (default)
+project-health --outdated      # Only check outdated dependencies
+project-health --security      # Only check for vulnerabilities
+project-health --unused        # Only check for unused dependencies
+project-health --large-files   # Only check for large files
+project-health --tests         # Only check for test files
+project-health --help          # Show help
+project-health --version       # Show version
+```
+
+### Example Output
+
 ```
 📦 Outdated dependencies: 2
 - lodash: current 4.17.0, latest 4.17.21
@@ -54,7 +72,7 @@ Suggestion: Run "npm audit fix" to address vulnerabilities.
 - lodash
 - marked
 Suggestion: Remove unused packages with "npm uninstall <package>".
-📁 Large file: large-dummy.zip (2.86 MB)
+📁 Large file: some-large-file.zip (2.86 MB)
 Suggestion: Remove or compress large files if not needed.
 🧪 Test files found: 2
 - dummy2.spec.js
@@ -63,7 +81,7 @@ Summary:
 📦 Dependencies: 2 outdated, 3 unused
 🔐 Vulnerabilities: 4 found
 🧪 Tests: 2 test files found
-📁 Large file: large-dummy.zip (2.86 MB)
+📁 Large file: some-large-file.zip (2.86 MB)
 ✅ Report saved: reports/project-health.md
 Some issues were found. See above for details and suggestions.
 ```

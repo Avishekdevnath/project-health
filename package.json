@@ -1,15 +1,39 @@
 {
   "name": "project-health",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A CLI tool to analyze Node.js project health and generate reports.",
   "author": "",
   "main": "./bin/cli.js",
   "bin": {
     "project-health": "./bin/cli.js"
   },
-  "keywords": [],
+  "keywords": [
+    "health",
+    "audit",
+    "dependencies",
+    "security",
+    "unused",
+    "large files",
+    "test coverage",
+    "nodejs",
+    "cli",
+    "project",
+    "analyzer",
+    "report",
+    "npm",
+    "ci",
+    "code quality",
+    "best practices",
+    "maintainability",
+    "project-health"
+  ],
   "license": "ISC",
-  "scripts": {},
+  "scripts": {
+    "test": "jest",
+    "release": "standard-version",
+    "release:minor": "standard-version --release-as minor",
+    "release:major": "standard-version --release-as major"
+  },
   "dependencies": {
     "chalk": "^5.4.1",
     "commander": "^14.0.0",
@@ -23,6 +47,7 @@
   },
   "devDependencies": {
     "eslint": "^9.31.0",
-    "jest": "^30.0.4"
+    "jest": "^30.0.4",
+    "standard-version": "^9.5.0"
   }
 }
