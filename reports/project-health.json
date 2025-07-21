@@ -1,0 +1,44 @@
+{
+  "outdated": {
+    "outdated": {
+      "mock-package": {
+        "current": "1.0.0",
+        "latest": "2.0.0"
+      }
+    }
+  },
+  "audit": {
+    "audit": {
+      "audit": {
+        "metadata": {
+          "vulnerabilities": {
+            "high": 1,
+            "moderate": 2,
+            "low": 0
+          }
+        }
+      }
+    }
+  },
+  "unused": {
+    "unused": {
+      "dependencies": [
+        "mock-unused"
+      ]
+    }
+  },
+  "largeFiles": {
+    "largeFiles": [
+      {
+        "file": "mock-large-file.zip",
+        "sizeMB": "5.00"
+      }
+    ]
+  },
+  "testFiles": {
+    "testFiles": [
+      "mock.test.js",
+      "mock.spec.js"
+    ]
+  }
+}
