@@ -1,7 +1,7 @@
 # Project Health
 
 [![npm version](https://img.shields.io/npm/v/project-health.svg)](https://www.npmjs.com/package/project-health)
-[![CI](https://github.com/yourusername/project-health/actions/workflows/ci.yml/badge.svg)](https://github.com/yourusername/project-health/actions)
+[![CI](https://github.com/Avishekdevnath/project-health/actions/workflows/ci.yml/badge.svg)](https://github.com/Avishekdevnath/project-health/actions)
 
 > Analyze your Node.js project and generate a comprehensive health report.
 
