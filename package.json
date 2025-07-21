@@ -1,6 +1,6 @@
 {
   "name": "project-health",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A CLI tool to analyze Node.js project health and generate reports.",
   "author": "",
   "main": "./bin/cli.js",
