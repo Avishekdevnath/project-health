@@ -2,7 +2,7 @@
   "name": "project-health",
   "version": "1.0.3",
   "description": "A CLI tool to analyze Node.js project health and generate reports.",
-  "author": "",
+  "author": "Avishek Devnath <avishekdevnath@gmail.com>",
   "main": "./bin/cli.js",
   "bin": {
     "project-health": "./bin/cli.js"
